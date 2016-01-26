@@ -1,9 +1,0 @@
-[ODBC]
-DRIVER=ODBC Driver 11 for SQL Server
-Address=WIN7-PC\SQLEXPRESS,1433
-Network=DBMSSOCN
-DATABASE=SD_DEMO_BE_SQL
-WSID=WIN7-PC
-APP=Microsoft Office 2010
-Trusted_Connection=Yes
-SERVER=Alias 
