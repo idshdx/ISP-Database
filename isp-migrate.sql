@@ -1,6 +1,3 @@
---Version 0.3
---Script to migrate data from ISB DB Schema(imported into Postgres) to Cloud schema. For details, consulting or issues contact andrei.mihaila@roundassist.com
---This script should be run after the data and schema has been moved to PostgreSQL(I used RazorSQL but any tool would work just fine)
 --References: 
 --ISP DB Schema is 'old' schema, Cloud is 'new' schema in the script.
 --For general types of information(like gender) I added two queries, one being commented.The commented one inserts values that are specified(instead of getting data from ISP DB)
