@@ -15,7 +15,7 @@ DESTINATION_TABLE=ArchivedLogs
 
 PGPASSWORD=$2 psql -U $1 $1 # command line args or you can hardcode
 
-psql -d ${DATABASE} -U $1  -<<THE_END #connect to the db server, begining of sql code
+psql -d ${DATABASE} -U $1  -<<THE_END
 
 --if moveLogs() is found on the db server, you can use the function instead of the defition below
 --SELECT "moveLogs"(); THE_END
