@@ -9,7 +9,7 @@
 
 -- 'gender' table
 
-CREATE SEQUENCE new.genderIDs START WITH 1; -- replace with any value
+CREATE SEQUENCE new.genderIDs START WITH 1; -- default value
 ALTER TABLE new.gender ALTER COLUMN id SET DEFAULT nextval('new.genderIDs');
 insert into new.gender(name)
 select distinct sex from old.names where sex is not null;
@@ -18,7 +18,7 @@ select distinct sex from old.names where sex is not null;
 
 --'grade' table
 
-CREATE SEQUENCE new.gradeID START WITH 1; -- replace with any value
+CREATE SEQUENCE new.gradeID START WITH 1;
 ALTER TABLE new.grade ALTER COLUMN id SET DEFAULT nextval('new.gradeID');
 insert into new.grade(name)
 select distinct grade from old.tblgrade where grade is not null;
@@ -28,7 +28,7 @@ select distinct grade from old.tblgrade where grade is not null;
 
 --'country' table*
 
-CREATE SEQUENCE new.countryIDsss START WITH 1; -- replace with any value
+CREATE SEQUENCE new.countryIDsss START WITH 1;
 ALTER TABLE new.country ALTER COLUMN id SET DEFAULT nextval('new.countryIDsss');
 insert into new.country(name)
 select distinct country  from old.countries where country is not null;
