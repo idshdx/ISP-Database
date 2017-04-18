@@ -1,4 +1,4 @@
-#Script used to backup databses
+#Script used to backup databases
 #Backups older than 10 days are removed
 #!/bin/sh
 
