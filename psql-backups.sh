@@ -11,7 +11,7 @@ timespan=`date '+%Y%m%d%H%M'`
 
 touch $logfile
 
-databases=`psql -U postgres -t -c "select datname from pg_database where datname not like 'template%';"$
+databases=`psql -U postgres -t -c "select datname from pg_database where datname not like 'template%';"`
 
 #delete files older than 10 days
 find ./$backup_dir/ -mtime +10 -type f -delete
